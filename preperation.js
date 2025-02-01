@@ -26,3 +26,28 @@ function reverseString(str) {
 
 // Example usage:
 console.log(reverseString("hello")); // Output: "olleh"
+
+const number = [4, 5, 6, 9, 0];
+const maxNumber = Math.max(...number);
+console.log(maxNumber);
+
+const numbers = [4, 5, 6, 9, 0];
+const minNumber = Math.min(...numbers);
+console.log(minNumber);
+
+let intro = {
+  name: "Hafsa",
+  age: 18,
+  city: "Karachi",
+};
+
+console.log(intro);
+
+setTimeout(() => {
+  console.log("Hello");
+}, 3000);
+
+function removeDuplicate(arr) {
+  return [...new Set(arr)];
+}
+console.log(removeDuplicate([1, 2, 2, 3, 4, 4, 5]));
