@@ -51,3 +51,8 @@ function removeDuplicate(arr) {
   return [...new Set(arr)];
 }
 console.log(removeDuplicate([1, 2, 2, 3, 4, 4, 5]));
+
+fetch("https://jsonplaceholder.typicode.com/todos/1")
+  .then((response) => response.json)
+  .then((data) => console.log(data))
+  .catch((error) => console.error("Each fetching data:", error));
